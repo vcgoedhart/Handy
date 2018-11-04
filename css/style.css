@@ -1,0 +1,455 @@
+body {
+
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+#wrapper {
+
+	width: 1000px;
+	margin: 0 auto;
+    font-size: 22px;
+    position: relative;
+}
+
+header {
+
+	height: 58px;
+}
+
+.headerLogo > img {
+
+	position: absolute;
+	left: 30px;
+}
+
+.headerNavBar > ul {
+
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background-color: #222931;
+	list-style-type: none;
+	width: 950px;
+	padding-left: 30px;
+}
+
+.headerNavBar > ul > li > a, .dropdown > a {
+
+	text-decoration: none;
+	float: left;
+	color: white;
+	padding: 17px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.dropdown-content {
+
+	position: absolute;
+	top: 50px;
+	left: 93px;
+	background-color: #222931;
+	list-style-type: none;
+	height: 100px;
+	width: 180px;
+	padding: 0;
+	display: none;
+}
+
+.dropdown-content > a {
+
+	position: relative;
+	display: block;
+	padding-left: 10px;
+	background-color: #222931;
+	text-decoration: none;
+	color: #aeb6be;
+}
+
+.dropdown:hover .dropdown-content {
+
+	display: block;
+}
+
+.dropdown:hover > a, .dropdown-content > a:hover, .headerNavBar > ul > li > a:hover {
+
+	background-color: #ffe718;
+	color: #222931;
+}
+
+.headerBg {
+
+	height: 500px;
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+section {
+
+	position: relative;
+}
+
+.sectionBanners {
+
+	height: 220px;
+	width: 975px;
+	margin: 108px auto;
+}
+
+.banner {
+
+	display: inline-block;
+	width: 300px;
+	height: 220px;
+	margin: 10px;
+}
+
+.bannerHover {
+
+	position: absolute;
+	width: 300px;
+	height: 220px;
+	background-color: rgba(34,41,49,0.8);
+	display: none;
+}
+
+.bannerHover > h2 {
+
+	position: relative;
+	top: 58px;
+	text-align: center;
+	color: white;
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.banner > img {
+
+	position: relative;
+	z-index: -1;
+}
+
+.banner:hover .bannerHover {
+
+	display: block;
+}
+
+.sectionText {
+
+	position: relative;
+	top: 50px;
+	height: 450px;
+}
+
+.sectionBreadcrumb {
+
+	font-size: 12px;
+	font-weight: 400;
+	color: #aeb6be;
+}
+
+.breadcrumb {
+
+	list-style-type: none;
+	position: absolute;
+	left: 0;
+	top: 10px;
+	padding: 0;
+	margin: 0;
+}
+
+.breadcrumb > li {
+
+	float: left;
+	color: #5f656d;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.breadcrumb > li+li::before {
+
+	content: "\00a0 > ";
+}
+
+.breadcrumb > li > a {
+
+	text-decoration: none;
+	color: #5f656d;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.breadcrumb > li > a:hover {
+
+	text-decoration: underline;
+}
+
+.sectionText > h2 {
+
+	font-size: 34px;
+	font-weight: 600;
+}
+
+.sectionText > p {
+
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.nieuwbouwHover, .adviesHover, .regelgevingHover {
+
+	color: #ffe718;
+}
+
+.nieuwbouwBox, .adviesBox, .regelgevingBox {
+
+	background-color: #aeb6be;
+	font-size: 12px;
+	color: white;
+	width: 150px;
+	padding: 7px;
+	position: absolute;
+	display: none;
+}
+
+.nieuwbouwBox {
+
+	left: 471px;
+	top: 96px;
+}
+
+.adviesBox {	
+
+	left: 334px;
+	top: 242px;
+}
+
+.regelgevingBox {
+
+	left: 802px;
+	top: 242px;
+}
+
+.nieuwbouwHover:hover .nieuwbouwBox, .adviesHover:hover .adviesBox, .regelgevingHover:hover .regelgevingBox {
+
+	display: block;
+}
+
+.ribbon {
+
+	position: relative;
+	height: 130px;
+	background-color: #ffe718;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.ribbonText {
+
+	position: absolute;
+	left: 240px;
+	top: 16px;
+	width: 450px;
+}
+
+.ribbonText > p {
+
+	font-size: 34px;
+	font-weight: 700;
+	color: #222931;
+}
+
+.ribbonTextSmall {
+
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.ribbonButton {
+
+	position: absolute;
+	top: 50px;
+	right: 320px;
+}
+
+.ribbonButton > button {
+
+	font-size: 12px;
+	font-weight: 500;
+	padding: 12px 65px;
+	background-color: white;
+	border: none;
+	color: #222931;
+}
+
+.ribbonButton > button:hover {
+
+	background-color: #222931;
+	color: white;
+}
+
+.ribbonButton > button:focus {
+
+	outline: 0;
+}
+
+.footerBg {
+
+	position: relative;
+	top: 70px;
+	height: 220px;
+	background-image: url("../img/footer.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+article {
+
+	position: relative;
+	height: 240px;
+}
+
+.itemMenu {
+
+	height: 180px;
+}
+
+.yellowBox {
+
+	text-decoration: none;
+	position: relative;
+	height: 100px;
+	width: 300px;
+	background-color: #ffe718;
+	float: left;
+	margin: 15px;
+}
+
+.yellowBoxText {
+
+	position: relative;
+	left: 90px;
+	top: 25px;
+}
+
+.yellowBox > div > h2 {
+
+	font-size: 22px;
+	font-weight: 600;
+	color: #222931;
+	margin: 0;
+}
+
+.yellowBox > div > p {
+
+	font-size: 14px;
+	font-weight: 600;
+	color: #222931;
+	margin: 0;
+}
+
+.yellowBox > i {
+
+	position: absolute;
+	color: #222931;
+	left: 20px;
+	top: 26px;
+}
+
+.yellowBox:hover .yellowBoxText > h2, .yellowBox:hover .yellowBoxText > p, .yellowBox:hover i {
+	
+	color: white;
+}
+
+.yellowBox:hover {
+
+	background-color: #222931;
+}
+
+footer {
+
+	position: relative;
+	height: 280px;
+}
+
+.footerText {
+
+	position: absolute;
+	margin-right: 650px;
+}
+
+.footerText > h2 {
+
+	color: #222931;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.footerText > p {
+
+	color: #5f656d;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.footerInfo {
+
+	position: absolute;
+	right: 50px;
+	width: 230px;
+}
+
+.footerInfo > div {
+
+	width: 20px;
+	height: 50px;
+}
+
+.footerInfo > div > h2 {
+
+	color: #222931;
+	font-size: 24px;
+	font-weight: 600px;
+}
+
+.footerInfo > div > i {
+
+	position: absolute;
+	margin-top: 13px;
+	color: #5f656d;
+}
+
+.footerInfo > div > p {
+
+	position: absolute;
+	left: 30px;
+	color: #5f656d;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	width: 100px;
+}
+
+.credit {
+
+	position: relative;
+	height: 60px;
+	background-color: #222931;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.creditText {
+
+	position: absolute;
+	top: 10px;
+	right: 250px;
+	color: white;
+	font-size: 12px;
+	font-weight: 400;
+}
